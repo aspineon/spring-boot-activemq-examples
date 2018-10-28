@@ -1,4 +1,4 @@
-spring-boot-activemq (jms spring boot application in memory) :
+<b>Spring-boot-activemq (jms spring boot application in memory) </b>:
 
 A simple application that sends a message to a queue of an in-memory instance of ActiveMQ and subscribes it with a @jmslistener annotated method of a managed bean.
 
@@ -9,3 +9,6 @@ Producer.java – I create a Producer that will allow the message to be sent to 
 I access the message through a Consumer inside the same project: Consumer.java
 
 @JmsListener listen for anything inside the “inmemory.queue” and the listener() method will retrieve what’s in the queue (the message).In the browser at http://localhost:8081/publish/hello%20world%! I got the results below: "published sucessfuly" and in console: "Received Message->hello world"
+
+<b>Spring  boot activemq standaone application </b>
+A simple application that sends a message to a queue of stanone instance of ActiveMQ and subscribes it with a @jmslistener annotated method of a managed bean.
